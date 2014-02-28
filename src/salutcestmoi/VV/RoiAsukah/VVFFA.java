@@ -167,7 +167,7 @@ public class VVFFA extends JavaPlugin{
 			{
 				if(Lobbyffa.containsKey(fp.getFaction()))
 				{
-					if(Lobbyffa.get(fp.getFaction()).contains(p) && nbrPlayerDansLobbyffa - 1 >= 3)
+					if(Lobbyffa.get(fp.getFaction()).contains(p))
 					{
 						nbrPlayerDansLobbyffa--;
 						p.sendMessage(ChatColor.AQUA + "Vous avez quitté le Lobbyffa");
@@ -175,7 +175,8 @@ public class VVFFA extends JavaPlugin{
 						if(Lobbyffa.get(fp.getFaction()).isEmpty())
 						{
 							Lobbyffa.remove(fp.getFaction());
-							if(getNbreFactionsLobby() < 3)
+						}
+							if(getNbreFactionsLobby() < 2 || nbrPlayerDansLobbyffa <3)
 							{
 								if(LauchingTaskRunning)
 								{
@@ -184,7 +185,6 @@ public class VVFFA extends JavaPlugin{
 									Bukkit.getServer().broadcastMessage(ChatColor.DARK_RED + "Le lancement du ffa est annulé car " + p.getName() + " a quitté le lobby");
 								}
 							}
-						}
 					}
 					else
 					{
