@@ -27,7 +27,7 @@ public class TaskLauching extends BukkitRunnable{
     	{
     		for(Player p : VVFFA.Lobbyffa.get(MapKey))
     		{
-    			p.performCommand("pa Ffa " + MapKey.getTag() );
+    			p.performCommand("pa Emeute " + MapKey.getTag() );
     		}
     	}
     	VVFFA.peuEntrerLobbyffa = false;

@@ -13,7 +13,7 @@ commands:
     description: Vous fais quitter le lobby ffa
     permission: vvffa.basic
     permission-message: Vous n'avez pas la permission de faire ceci
-  whoisinffa
+  whoisinffa:
     description: envoie la liste des joueurs dans le lobby
     aliases: wiiffa
     permission: vvffa.basic
