@@ -1,0 +1,21 @@
+name: VVFFA
+version: 1.0
+author: RoiAsukah
+main: salutcestmoi.VV.RoiAsukah.VVFFA
+depend: [Factions, pvparena]
+
+commands:
+  ffajoin:
+    description: Vous fais rejoindre le lobby ffa
+    permission: vvffa.basic
+    permission-message: Vous n'avez pas la permission de faire ceci
+  ffaleave:
+    description: Vous fais quitter le lobby ffa
+    permission: vvffa.basic
+    permission-message: Vous n'avez pas la permission de faire ceci
+  whoisinffa
+    description: envoie la liste des joueurs dans le lobby
+    aliases: wiiffa
+    permission: vvffa.basic
+    permission-message: Vous n'avez pas la permission de faire ceci
+  
